@@ -11,3 +11,11 @@ $query->execute($parameters);
 
 
 ?>
+
+<html lang="fr">
+    
+    <main>
+        <p>Votre vote a bien été enregistré</p>
+    </main>
+    
+</html>

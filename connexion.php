@@ -15,6 +15,4 @@ $db = new PDO(
 );
     
 
-var_dump($db);
-
 ?>
