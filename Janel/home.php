@@ -24,7 +24,7 @@
                 <input type="password" class="form-control" id="password" name="password">
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary">Connexion</button>
             </div>
         </form>
         <p>Pas encore de compte ? <a href="../Daniel/inscription.php">Inscris-toi</a> pour devenir un Daniel lover !</p>
