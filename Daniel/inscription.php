@@ -1,6 +1,5 @@
 <?php
 
-header("Location: https://kilianjanus.sites.3wa.io/PHP/Daniel-lovers/Kilian/espace_membre.php");
 require "../connexion.php";
 
 if(isset($_POST['first-name']) && ($_POST['last-name']) && ($_POST['email']) && ($_POST['password'])) {
@@ -31,8 +30,7 @@ $parameters = [
 <body>
     <h1>Inscription</h1>
 
-    
-    <form class="row g-3" action="espace_membre.php" method="post">
+    <form class="row g-3" action="../Janel/home.php" method="post">
         <div class="col-md-5">
           <label for="last-name" class="form-label">Nom</label>
           <input type="text" class="form-control" name="last-name" id="last-name">
