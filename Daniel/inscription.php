@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="inscriptionBody">
     <h1>Inscription</h1>
 
     <form class="row g-3" action="../Janel/welcome.php" method="post">

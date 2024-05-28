@@ -4,6 +4,12 @@
     margin-top: 1em;
 }
 
+.inscriptionBody {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 1em;
+}
+
 .products-container {
     display:flex;
     justify-content: space-evenly;
