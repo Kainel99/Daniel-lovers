@@ -37,18 +37,19 @@ $products = $productQuery->fetchAll(PDO::FETCH_ASSOC);
         
         <h2>Votez pour votre Dan-ccessoire préféré</h2>
         <form class="voteform" method="post" action="submit_vote.php">
-            <div class="products-container">
+            <input type="hidden" id="userId" name="userId" value="<?php echo htmlspecialchars($user['id']); ?>" />
+            <fieldset class="products-container">
             <?php foreach ($products as $product): ?>
-                <div class="product">
+                <fieldset class="product">
                     <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                     <img src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>" style="width:200px;height:auto;">
-                    <div>
+                    <fieldset>
                         <input type="radio" id="product_<?php echo $product['id']; ?>" name="product_id" value="<?php echo $product['id']; ?>" required>
                         <label for="product_<?php echo $product['id']; ?>">Choisir</label>
-                    </div>
-                </div>
+                    </fieldset>
+                </fieldset>
             <?php endforeach; ?>
-            </div>
+            </fieldset>
             <div class="button-center">
             <button type="submit" class="btn btn-primary">Voter</button>
             </div>
