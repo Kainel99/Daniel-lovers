@@ -9,6 +9,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="home.css" type="text/css" />
     </head>
     <body>
         <h1>Les Daniel Lovers</h1>
@@ -26,7 +27,7 @@
                 <button type="submit" class="btn btn-primary">Sign in</button>
             </div>
         </form>
-        <p>Pas encore de compte ? <a href="inscription.php">Inscris-toi</a> pour devenir un Daniel lover !</p>
+        <p>Pas encore de compte ? <a href="../Daniel/inscription.php">Inscris-toi</a> pour devenir un Daniel lover !</p>
     </body>
 </html>
 
