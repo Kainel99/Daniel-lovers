@@ -9,9 +9,9 @@
         <title>Home</title>
         <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="home.css" type="text/css" />
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
     </head>
-    <body>
+    <body class="homeBody">
         <h1>Les Daniel Lovers</h1>
         <p>Trouver de l'inspi pour ce texte</p>
         <form class="row g-3" action="welcome.php" method="post">
