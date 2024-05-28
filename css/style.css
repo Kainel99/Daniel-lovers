@@ -1,0 +1,9 @@
+.products-container {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.button-center {
+    text-align: center;
+    margin-top: 2em;
+}
