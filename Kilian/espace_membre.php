@@ -27,8 +27,10 @@ $products = $productQuery->fetchAll(PDO::FETCH_ASSOC);
     </head>
     
     <main class="container">
+        <div class="admin-container">
         <h1>Espace Membre</h1>
-        
+        <p><a href="admin.php">Admin</a></p>
+        </div>
         <h2>Utilisateur</h2>
         <p><?php echo htmlspecialchars($user['first_name']); ?> <?php echo htmlspecialchars($user['last_name']); ?></p>
         

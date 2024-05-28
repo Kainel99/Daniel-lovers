@@ -13,3 +13,16 @@
     text-align: center;
     margin-top: 2em;
 }
+
+.admin-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-table {
+    text-align: center;
+}
+
+.admin-table > tr {
+    padding: 2em;
+}
