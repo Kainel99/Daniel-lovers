@@ -42,15 +42,27 @@ $users = $query->fetchAll(PDO::FETCH_ASSOC);
                 <td> <?php echo htmlspecialchars($user['admin']); ?> </td>
                 <td class="col-boutons"><form method="POST" action="user_update.php">
                     <input type="submit" name="user_update" value="Modifier"/>
+                    <input type="hidden" id="userId" name="userId" value="<?php echo htmlspecialchars($user['id']); ?>" />
                     </form>
                     <form method="POST" action="user_delete.php">
                     <input type="submit" name="user_delete" value="Supprimer"/>
+                    <input type="hidden" id="userId" name="userId" value="<?php echo htmlspecialchars($user['id']); ?>" />
                     </form>
                 </tr>
             <?php endforeach; ?>
         </tbody>
         </table>
         <p><form method="POST" action="user_create.php">
+            <label for="first-name" class="form-label">Prénom</label>
+            <input type="text" class="form-control" name="first_name" id="first_name" >
+            <label for="last-name" class="form-label">Nom</label>
+          <input type="text" class="form-control" name="last_name" id="last_name">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="votre@email.fr">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="password">
+          <label for="admin" class="form-label">Admin ? (1 pour oui, 0 pour non)</label>
+          <input type="number" class="form-control" name="admin" id="admin" >
                     <input type="submit" name="user_create" value="Ajouter un utilisateur"/>
                     </form></p>
 
