@@ -29,6 +29,7 @@ $users = $query->fetchAll(PDO::FETCH_ASSOC);
                 <th scope="col">Email</th>
                 <th scope="col">Article préféré</th>
                 <th scope="col">Admin</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -39,10 +40,19 @@ $users = $query->fetchAll(PDO::FETCH_ASSOC);
                 <td> <?php echo htmlspecialchars($user['email']); ?> </td>
                 <td> <?php echo htmlspecialchars($user['vote']); ?> </td>
                 <td> <?php echo htmlspecialchars($user['admin']); ?> </td>
+                <td class="col-boutons"><form method="POST" action="user_update.php">
+                    <input type="submit" name="user_update" value="Modifier"/>
+                    </form>
+                    <form method="POST" action="user_delete.php">
+                    <input type="submit" name="user_delete" value="Supprimer"/>
+                    </form>
                 </tr>
             <?php endforeach; ?>
         </tbody>
         </table>
+        <p><form method="POST" action="user_create.php">
+                    <input type="submit" name="user_create" value="Ajouter un utilisateur"/>
+                    </form></p>
 
 </main>
 </html>
