@@ -40,11 +40,11 @@ $users = $query->fetchAll(PDO::FETCH_ASSOC);
                 <td> <?php echo htmlspecialchars($user['email']); ?> </td>
                 <td> <?php echo htmlspecialchars($user['vote']); ?> </td>
                 <td> <?php echo htmlspecialchars($user['admin']); ?> </td>
-                <td class="col-boutons"><form method="POST" action="user_update.php">
+                <td class="col-boutons"><form method="POST" action="../Daniel/page_edit.php">
                     <input type="submit" name="user_update" value="Modifier"/>
                     <input type="hidden" id="userId" name="userId" value="<?php echo htmlspecialchars($user['id']); ?>" />
                     </form>
-                    <form method="POST" action="user_delete.php">
+                    <form method="POST" action="../Janel/user_delete.php">
                     <input type="submit" name="user_delete" value="Supprimer"/>
                     <input type="hidden" id="userId" name="userId" value="<?php echo htmlspecialchars($user['id']); ?>" />
                     </form>
